@@ -5,6 +5,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: process.env.VITE_DEV_PORT || 5173,
-    open: true
+    open: true,
+    host: true
+  },
+  preview: {
+    port: process.env.PORT || 4173,
+    host: true,
+    allowedHosts: [
+      'sistema-calificaciones.onrender.com',
+      '.onrender.com'
+    ]
   }
 })
