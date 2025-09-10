@@ -1,0 +1,1 @@
+export const RATE_LIMIT_MESSAGE = 'Demasiadas solicitudes. Por favor, intenta nuevamente en unos momentos.';
